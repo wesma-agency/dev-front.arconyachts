@@ -1,0 +1,15 @@
+export const tags = [
+  { title: 'Алюминиевые яхты', count: 12 },
+  { title: 'Б/У яхты', count: 12 },
+  { title: 'Элитные яхты', count: 12 },
+  { title: 'Маленькие яхты', count: 12 },
+  { title: 'Яхты 30-40 метров', count: 12 },
+  { title: 'Стальные яхты', count: 2 },
+  { title: 'Траулеры', count: 2 },
+  { title: 'Мега-яхты', count: 2 },
+  { title: 'Яхты 10-20 метров', count: 2 },
+  { title: 'Яхты от 50 метров', count: 2 },
+  { title: 'Новые яхты', count: 12 },
+  { title: 'Экспециционные яхты', count: 12 },
+  { title: 'Эксклюзив', count: 24 },
+]
