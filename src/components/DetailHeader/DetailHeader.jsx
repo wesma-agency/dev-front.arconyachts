@@ -69,6 +69,11 @@ const StyledParagraphWrapper = styled.div`
   }
 `
 
+// добавлено 28.05.2023 для того, чтоб картинка бралась не из кэша
+const customLoader = ({ src }) => {
+  return src
+}
+
 const Slider = memo(({ images, swiperRef, tablet, setIsGalleryOpened }) => {
   return (
     <StyledSlider
@@ -119,6 +124,8 @@ const Slider = memo(({ images, swiperRef, tablet, setIsGalleryOpened }) => {
             }}
             sizes={getSizes('1920px')}
             alt={image.fullpath || image}
+            // loader={customLoader} // добавлено 28.05.2023 для того, чтоб картинка бралась не из кэша
+            loader={({src}) => src} // для загрузки без кэша (30.05.2023)
           />
         </StyledSlide>
       ))}

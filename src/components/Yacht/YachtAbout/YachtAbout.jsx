@@ -41,7 +41,13 @@ const YachtAbout = ({
         isBuilding={isBuilding}
       >
         {!!feature.src && (
-          <Image src={feature.src} alt={feature.title} width={80} height={80} />
+          <Image
+            src={feature.src}
+            alt={feature.title}
+            width={80}
+            height={80}
+            loader={({src}) => src} // для загрузки без кэша (30.05.2023)
+          />
         )}
       </StyledCard>
     ))

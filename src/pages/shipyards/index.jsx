@@ -72,7 +72,17 @@ const Shipyards = ({ content, filterItems, footerItems }) => {
   const [data, setData] = useState(shipyards)
   useEffect(() => {
     if (shipyards) {
-      setData(shipyards)
+      const sortedShipyards = {
+        ...shipyards,
+        shipyards: {
+          ...shipyards?.shipyards,
+          data: [...(shipyards?.shipyards?.data || [])].sort(
+            (a,b) => a.sort - b.sort
+          )
+        }
+      };
+      setData(sortedShipyards)
+      // setData(shipyards)
     }
   }, [shipyards])
   const shipyardCatalogStatic = useTranslation('shipyardCatalogStatic')

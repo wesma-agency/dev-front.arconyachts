@@ -36,6 +36,7 @@ const YachtPlan = ({ planRef, images }) => {
                   height={1080}
                   width={1920}
                   alt={properties.button_text}
+                  loader={({src}) => src} // для загрузки без кэша (30.05.2023)
                 />
               </StyledImageWrapper>
 

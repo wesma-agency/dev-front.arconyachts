@@ -46,7 +46,8 @@ module.exports = withPlugins(
       formats: ['image/webp'],
       deviceSizes: [375, 640, 980, 1280, 1920],
       // imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-      domains: ['api.arconyachts.com', 'api.arcon.loc', 'api-arcon.good-fellazz.ru']
+      domains: ['dev-01-api.wesma.ru'],
+      unoptimized: true
     },
     async rewrites() {
       return [

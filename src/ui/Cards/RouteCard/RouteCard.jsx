@@ -171,6 +171,7 @@ const RouteCard = ({
           layout="responsive"
           width={490}
           height={457}
+          loader={({src}) => src} // для загрузки без кэша (30.05.2023)
         />
         <StyledInfo>
           <StyledTitle>{title}</StyledTitle>

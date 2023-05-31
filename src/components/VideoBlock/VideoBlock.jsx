@@ -84,7 +84,12 @@ const VideoBlock = ({ poster, videoUrl, link, className, ...props }) => {
       />
       {poster && (
         <ImageWrapper isPlaying={isPlaying && 'playing'}>
-          <Image src={poster} layout="fill" objectFit={'cover'} />
+          <Image
+            src={poster}
+            layout="fill"
+            objectFit={'cover'}
+            loader={({src}) => src} // для загрузки без кэша (30.05.2023)
+          />
         </ImageWrapper>
       )}
       <StyledPlay

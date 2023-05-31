@@ -171,6 +171,7 @@ const YachtCard = ({
                     sizes={getSizes('480px')}
                     quality={75}
                     loading={'lazy'}
+                    loader={({src}) => src} // для загрузки без кэша (30.05.2023)
                   />
                   {teaser && <StyledBadge>{teaser}</StyledBadge>}
                   {i === 4 && images.length > 5 && (
@@ -196,6 +197,7 @@ const YachtCard = ({
                   sizes={getSizes('480px')}
                   quality={75}
                   loading={'lazy'}
+                  loader={({src}) => src} // для загрузки без кэша (30.05.2023)
                 />
                 {teaser && <StyledBadge>{teaser}</StyledBadge>}
               </StyledImages>

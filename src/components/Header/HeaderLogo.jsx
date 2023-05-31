@@ -40,6 +40,7 @@ const HeaderLogo = ({ isActive }) => {
             srcSet={'/img/header/logo.png 1x, /img/header/logo@2x.png 2x'}
             width={134}
             height={30}
+            loader={({src}) => src} // для загрузки без кэша (30.05.2023)
           />
         </StyledLogo>
         <StyledLangs>

@@ -47,6 +47,7 @@ const ServiceContent = ({ content, options }) => {
           src={image.src}
           alt={pageTitle}
           objectFit="cover"
+          loader={({src}) => src} // для загрузки без кэша (30.05.2023)
         />
       </StyledImageWrapper>
       <StyledServiceInfoWrapper>

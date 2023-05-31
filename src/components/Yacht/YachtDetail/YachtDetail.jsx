@@ -55,6 +55,7 @@ const MobileSlide = ({
             loading={'lazy'}
             onClick={() => setIsActive(!isActive)}
             alt={description}
+            loader={({src}) => src} // для загрузки без кэша (30.05.2023)
           />
         </ImageWrapper>
         <StyledTour
@@ -103,6 +104,7 @@ const YachtDetail = ({ detailRef, images, customData }) => {
                 loading={'lazy'}
                 alt={description}
                 sizes={getSizes('1050px')}
+                loader={({src}) => src} // для загрузки без кэша (30.05.2023)
               />
             </ImageWrapper>
             {index > enableStyledTourCount &&

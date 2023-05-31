@@ -88,6 +88,7 @@ const AltServiceCard = ({
         height={550}
         src={backgroundImg}
         alt={title}
+        loader={({src}) => src} // для загрузки без кэша (30.05.2023)
       />
       <StyledOverlay />
       <StyledTitle>{title}</StyledTitle>

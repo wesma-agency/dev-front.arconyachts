@@ -42,13 +42,20 @@ const YachtConsult = ({
           objectFit={'cover'}
           loading={isPrint ? 'eager' : 'lazy'}
           alt={name}
+          loader={({src}) => src} // для загрузки без кэша (30.05.2023)
         />
       </StyledImageWrapper>
       <StyledConsultWrapper>
         <StyledPersonWrapper>
           <StyledImageWrapperMob>
             {tablet && (
-              <Image src={image} width={111} height={300} alt={name} />
+              <Image
+                src={image}
+                width={111}
+                height={300}
+                alt={name}
+                loader={({src}) => src} // для загрузки без кэша (30.05.2023)
+              />
             )}
           </StyledImageWrapperMob>
           <StyledNameWrapper>

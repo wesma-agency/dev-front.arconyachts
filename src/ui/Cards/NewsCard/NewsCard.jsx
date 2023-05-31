@@ -33,6 +33,7 @@ const NewsCard = ({
             alt={title}
             objectFit="cover"
             sizes={getSizes('490px')}
+            loader={({src}) => src} // для загрузки без кэша (30.05.2023)
           />
         </ImagesWrapper>
         <Date withIndent={withIndent && 'withIndent'}>{date}</Date>

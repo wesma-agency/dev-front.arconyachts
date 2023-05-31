@@ -38,6 +38,7 @@ const YachtCardFullwidth = ({
           objectFit={'cover'}
           loading="eager"
           alt={name}
+          loader={({src}) => src} // для загрузки без кэша (30.05.2023)
         />
       </ImageWrapper>
       <StyledInfo>

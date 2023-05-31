@@ -73,6 +73,7 @@ const MainBuilding = ({}) => {
                   alt={service.title}
                   width={80}
                   height={80}
+                  loader={({src}) => src} // для загрузки без кэша (30.05.2023)
                 />
               )}
             </StyledCard>
