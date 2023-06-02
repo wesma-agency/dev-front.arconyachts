@@ -85,6 +85,29 @@ export default class MyDocument extends Document {
             }}
           /> */}
           <link rel="canonical" href={getCanonical(this.props.router)} />
+
+          <link rel="preload" href="/fonts/SangBleuSunrise/SangBleuSunrise-Medium.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/SangBleuSunrise/SangBleuSunrise-Regular.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/SangBleuSunrise/SangBleuSunrise-LightItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/SangBleuSunrise/SangBleuSunrise-MediumItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-BlackItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Black.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-ExtraLight.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-ExtraBoldItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Italic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Light.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-LightItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-ExtraLightItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-ExtraBold.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-BoldItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Thin.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-ThinItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-SemiBoldItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-MediumItalic.woff2" as="font" type="font/woff2"/>
+          <link rel="preload" href="/fonts/montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2"/>
         </Head>
         <body>
           {this.print.header}
