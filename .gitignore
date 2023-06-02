@@ -37,6 +37,14 @@ jspm_packages
 .node_repl_history
 .next
 .idea
-.env
 
+# SEO
 public/sitemap.xml
+
+
+# Config
+next.config.js
+.env
+package.json
+package-lock.json
+jsconfig.json
